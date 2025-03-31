@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #A594F9;
+	height: 100vh;
+	width: 100vw;
+	overflow-y:hidden ;
+	overflow-x: hidden;
+}
+.spinpic {
+	position: absolute;
+	background-image: url(discss.png);
+	background-size: cover;
+	bottom: 1%;
+	left: 3%;
+	height: 120px;
+	width: 120px;
+	animation: spin 6s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.songtitle {
+	position: absolute;
+	font-family: cursive;
+	font-size: 12px;
+	bottom: 7%;
+	left: 12%;
+}
+.stringlight {
+	position: absolute;
+	background-image: url(stringlight.png);
+	background-size: cover;
+	margin-top: -10px;
+	z-index: -1000;
+	width: 100%;
+	height: 30%;
+}
+.hartbg {
+	position: absolute;
+	background-image: url(harthart.png);
+	width: 100%;
+	margin-top: -20px;
+	z-index: -100;
+	height: 100%;
+}
+.bg-hart1 {
+	position: absolute;
+	top: 20%;
+	width: 100vw;
+	cursor: default;
+}
+.rope1 {
+	position: absolute;
+	width: 200px;
+	height: 5px;
+	top: 56%;
+	left: 11.6%;
+	transform: rotate(70deg);
+	border:2px solid #ccc;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #fff, #ccc);
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.rope2 {
+	position: absolute;
+	z-index: -1;
+	width: 208px;
+	height: 5px;
+	top: 56%;
+	right: 11.9%;
+	transform: rotate(-65deg);
+	border:2px solid #ccc;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, #fff, #ccc);
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hearts1 {
+	position: absolute;
+	font-size: 150px;
+	left: 80%;
+	transform: rotate(25deg);
+	color: #E31B23;
+}
+.hearts2 {
+	position: absolute;
+	right: 80%;
+	font-size: 150px;
+	transform: rotate(-25deg);
+	color: #E31B23;
+}
+#first {
+	height: 100vh;
+	width: 100vw;
+}
+.container-text {
+	text-align: center;
+	margin-top: 10px;
+}
+.container-text h1 {
+	font-family: cursive;
+	font-size: 35px;
+}
+.cover {
+	position: absolute;
+	cursor: pointer;
+	border: none;
+	background-image: url(ribbon.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	width: 400px;
+	z-index: 1;
+	background-color: #F19ED2 ;
+	border-radius: 30px;
+    transition: transform 0.9s ease-in-out;
+    transform-origin: left center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.cover.open {
+  transform: rotateY(-160deg);
+}
+.cover::after {
+	border: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5%;
+  bottom: 5%;
+  width: 3px;
+  background: rgba(0,0,0,0.1);
+  z-index: 3;
+}
+.main {
+	position: absolute;
+	top:43%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	height: 400px;
+	width: 400px;
+	background-color: #F19ED2;
+	border-radius: 30px;
+	cursor: default;
+	box-shadow: 5px 5px 10px #BE5985, -5px -5px 10px #EC7FA9;
+}
+.main h3 {
+	font-family: cursive;
+	text-align: center;
+}
+.main p {
+	padding-top: 10%;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 20px;
+	font-family: cursive;
+	text-align: center;
+}
+.heart1 {
+	position: relative;
+	display: flex;
+	padding-left: 15px;
+	margin-top: 10px;
+	gap: 81%;
+	width: 100%;
+	color: #E31B23;
+}
+.heart2 {
+	position: absolute;
+	display: flex;
+	padding-left: 15px;
+	margin-top: 13%;
+	gap: 81%;
+	width: 100%;
+	color: #E31B23;
+}
+.roundbg1 {
+	position: absolute;
+    border: 2px solid black	;
+	background-image: url(love1.png);
+	background-size: cover;
+	top: 50%;
+	right: 3%;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+.roundbg2 {
+	position: absolute;
+    border: 2px solid black	;
+	background-image: url(love4.png);
+	background-size: cover;
+	top: 50%;
+	left: 3%;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+.landbg {
+	position: absolute;
+	filter: blur(5px);
+	background-image: url(crbg.jpg);
+	width: 100vw;
+	z-index: -100;
+	height: 140px;
+	bottom: 0;
+	box-shadow: 0 0 15px #BE5985;
+}
+#second {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.headtext {
+	text-align: center;
+	font-family: cursive;
+}
+.headtext h2 {
+	margin-bottom: 10%;
+}
+.image {
+	overflow:hidden;
+	background-color: #F19ED2;
+	align-items: center;
+	padding: 25px 25px 25px 25px;
+}
+.wrap {
+	display: grid;
+	gap: 150px;
+	grid-auto-flow: column;
+	grid-auto-columns: 250px;
+	justify-content: stretch;
+	animation: slide 10s forwards infinite;
+}
+.wrap img {
+	border-radius: 5px;
+	object-fit: cover;
+	height: 300px;
+	width: 300px;
+}
+@keyframes slide {
+	to {
+		translate: calc(-5 * 250px);
+	}
+}
+/* Hide the checkbox */
+        #play-music {
+            display: none;
+        }
+        
+        /* Style the image to look clickable */
+        .music-image {
+            cursor: pointer;
+            width: 200px;
+            height: auto;
+            border: 2px solid transparent;
+            transition: transform 0.2s;
+        }
+        
+        .music-image:hover {
+            transform: scale(1.05);
+            border-color: #4CAF50;
+        }
+        
+        /* Hide the audio element */
+        #my-music {
+            display: none;
+        }
+        
+        /* When checkbox is checked, play audio */
+        #play-music:checked ~ #my-music {
+            display: block;
+        }
+    </style>
